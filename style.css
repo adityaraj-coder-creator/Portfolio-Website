@@ -1,0 +1,233 @@
+ * {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgb(3, 3, 31);
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+
+    color: aliceblue;
+    background-color: rgb(5, 5, 87);
+    height: 60px;
+    display: flex;
+    /* this aligns item*/
+    align-items: center;
+    /* Centers items vertically */
+    justify-content: space-between;
+    /* Pushes H1 to left and Link to right */
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin-left: 10px;
+    display: inline;
+}
+
+nav a {
+    /* background-color: rgb(39, 39, 217);  */
+    color: rgb(221, 201, 201);
+    text-decoration: none;
+    /*Remove line under anchor tag*/
+}
+
+.f {
+    margin-right: 13px;
+}
+
+.whole {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 70vh;
+    /* border: 2px solid rgb(19, 15, 11); */
+    width: 45vw;
+    margin-left: 15px;
+}
+
+.right {
+    height: 90vh;
+    /* border: 2px solid rgb(16, 14, 10); */
+    width: 45vw;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    height: 70vh;
+}
+
+.left p {
+    padding-top: 67px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+.g button {
+    background-color: rgb(111, 101, 170);
+    color: whitesmoke;
+    border-radius: 6px;
+    height: 40px;
+    margin-left: 65px;
+    cursor: pointer;
+    padding: 11px;
+    display: inline;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+button:hover {
+    background-color: rgb(140, 130, 200);
+}
+
+footer {
+    padding: 30px 45px;
+    color: aliceblue;
+    margin-left: 45px;
+}
+
+ul li {
+    font-size: 1.6rem;
+
+}
+
+ /* @media (max-width: 768px) {
+    .whole {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 90vw;
+        height: auto;
+    }
+
+    .right img {
+        height: auto;
+        width: 80%;
+    }
+} */
+
+.intro-text { font-size: 1.5rem; }
+.inline { display: inline; }
+.project-text { font-size: 1.2rem; }
+.contact-email {
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav h1 {
+        margin: 5px 0;
+        font-size: 1.4rem;
+    }
+
+    .box {
+        margin-top: 8px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 1rem;
+    }
+
+    /* MAIN SECTION */
+    .whole {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .left, .right {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    .left p {
+        font-size: 1.6rem;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    /* IMAGE */
+    .right img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* BUTTONS */
+    .g {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .g button {
+        margin: 0;
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .left p {
+        font-size: 2rem;
+    }
+
+    .right img {
+        width: 85%;
+        height: auto;
+    }
+
+    .g button {
+        margin-left: 20px;
+    }
+
+    ul li {
+        font-size: 1.4rem;
+    }
+}
